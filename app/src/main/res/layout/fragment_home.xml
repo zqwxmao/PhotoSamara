@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.home.HomeFragment">
+
+  <TextView
+    android:id="@+id/text_take_pic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:textAlignment="center"
+    android:text="拍照"
+    style="@style/DefButton"
+    android:background="@drawable/text_def_selector"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/text_pic_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:textAlignment="center"
+    android:text="列表"
+    style="@style/DefButton"
+    android:background="@drawable/text_def_selector"
+    app:layout_constraintStart_toEndOf="@id/text_take_pic"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/text_gen_video"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:textAlignment="center"
+    android:text="生成视频"
+    style="@style/DefButton"
+    android:background="@drawable/text_def_selector"
+    app:layout_constraintStart_toEndOf="@id/text_pic_list"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
